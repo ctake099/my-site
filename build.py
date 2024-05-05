@@ -38,18 +38,6 @@ import os
 
 env = Environment(loader=FileSystemLoader('templates'))
 
-def render_projects(directory):
-    for filename in os.listdir(directory):
-        if filename.endswith('.md'):
-            html_content, meta = markdown_to_html(os.path.join(directory, filename))
-            template = env.get_template('project.html')
-            rendered_html = template.render(project=meta)
-            output_path = os.path.join('output', filename.replace('.md', '.html'))
-            with open(output_path, 'w', encoding='utf-8') as f:
-                f.write(rendered_html)
-
-render_projects('content/projects')
-
 
 # プロジェクトとポストを処理
 projects = process_directory('content/projects')
