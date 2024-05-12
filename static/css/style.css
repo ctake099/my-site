@@ -35,6 +35,10 @@ header {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* ソフトなシャドウを追加 */
 }
 
+section, .row {
+    margin-bottom: 60px; /* セクションと行の下に余白を追加（以前の40pxから60pxへ変更） */
+}
+
 nav ul {
     list-style: none;
     padding: 0;
