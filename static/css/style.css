@@ -1,70 +1,97 @@
-.card-img-top {
-    width: 100%; /* コンテナの幅に合わせて調整 */
-    height: 200px; /* 高さを200pxに固定 */
-    object-fit: cover; /* 画像のアスペクト比を保持しつつ、指定されたサイズに合わせる */
-    transition: transform 0.3s ease-in-out;
-}
-
-
-.card:hover .card-img-top {
-    transform: scale(1.1); /* ホバー時に画像を10%拡大 */
-}
-
-.card {
-    overflow: hidden; /* ズーム時に画像がカードの外に出ないようにする */
-    position: relative;
-    transition: transform 0.3s ease-in-out;
-}
-
-.card:hover {
-    transform: scale(1.0); /* ホバー時にカードを10%拡大 */
-    z-index: 10; /* ホバーされたカードを他のカードより前に表示 */
-}
-
+/* ベースとなる設定 */
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    background-color: #f8f9fa;
-    line-height: 1.6;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* ビューポートの高さに基づいて最小高さを設定 */
+    min-height: 100vh;
 }
 
+.container {
+    padding: 20px; /* コンテナ全体のパディング */
+}
+
+h2 {
+    padding-top: 40px; /* 各見出しの上にパディングを追加 */
+    margin-top: 20px; /* 各セクションの間にマージンを設ける */
+    border-bottom: 2px solid #ccc; /* セクションのタイトル下に線を引く */
+    padding-bottom: 10px; /* タイトルの下にスペースを作る */
+}
+
+/* ヘッダー */
 header {
-    background: #007bff;
-    color: #fff;
-    padding: 10px 20px;
+    background-color: #f8f9fa; /* 軽い背景色に変更 */
+    color: black; /* 文字色を黒に変更 */
+    padding: 20px 0;
     text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* ソフトなシャドウを追加 */
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: black; /* リンクの色を黒に */
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
+nav ul li a:hover, nav ul li a:focus {
+    color: #007bff; /* フォーカスとホバー時の色を青に */
+}
 
-footer {
-    margin-top: auto; /* コンテンツが少ない時にフッターを下に押し出す */
+/* カードのスタイル */
+.card {
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    margin: 20px;
+    margin-top: 20px; /* 各カードの上にマージンを追加 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* カードに影を追加 */
+}
+
+.card-img-top {
     width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+.card:hover {
+    transform: scale(1.0);
+    z-index: 10;
+}
+
+/* フッター */
+footer {
+    background-color: #f8f9fa; /* 背景色を軽く */
+    color: black;
     text-align: center;
     padding: 10px 0;
-    background: #007bff;
-    color: white;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1); /* 上向きのシャドウを追加 */
+    margin-top: 40px;
+    width: 100%;
 }
+
+/* 追加のスタイルが必要な場合はここに記述 */
