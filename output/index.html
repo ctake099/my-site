@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
     <meta charset="UTF-8">
@@ -16,7 +16,8 @@
         <h1>Takeru Shingu's Portfolio</h1>
         <nav>
             <ul>
-                <li><a href="#about me">About Me</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#blog">Blog</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -24,60 +25,81 @@
         </nav>
     </header>
 
-    <!-- 自己紹介セクション -->
-    <section id="about me">
-        <h2>About Me</h2>
-        <p>Welcome to my portfolio website! Here you can find information about my projects, blog posts, and how to
-            contact me.</p>
+    <!-- プロファイルセクション -->
+    <section id="profile">
+        <h2>Profile</h2>
+        <p>Brief information about Takeru Shingu.</p>
+    </section>
+
+    <!-- スキルセクション -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming Languages: Python, JavaScript</li>
+            <li>Frameworks: Django, React</li>
+            <li>Other: Data Analysis, Machine Learning</li>
+        </ul>
     </section>
 
     <div class="container mt-4">
         <h1>Projects</h1>
         <div class="row">
             
+            
             <div class="col-md-4">
-                <div class="card">
-                    <img src="../static/img/OIG2.jpg" class="card-img-top" alt="Project B">
+                <div class="card clickable">
+                    <a href="" class="card-link">
+                        <img src="../static/img/OIG2.jpg" class="card-img-top" alt="Project C">
+                    </a>
                     <div class="card-body">
-                        <h5 class="card-title">Project B</h5>
+                        <h5 class="card-title">Project C</h5>
                         <p class="card-text">A brief summary of the post.</p>
-                        <a href="#" class="btn btn-primary">More Details</a>
                     </div>
                 </div>
             </div>
             
+            
+            
             <div class="col-md-4">
-                <div class="card">
-                    <img src="../static/img/OIG3.jpg" class="card-img-top" alt="Project D">
+                <div class="card clickable">
+                    <a href="" class="card-link">
+                        <img src="../static/img/OIG3.jpg" class="card-img-top" alt="Project D">
+                    </a>
                     <div class="card-body">
                         <h5 class="card-title">Project D</h5>
                         <p class="card-text">A brief summary of the post.</p>
-                        <a href="#" class="btn btn-primary">More Details</a>
                     </div>
                 </div>
             </div>
             
+            
+            
             <div class="col-md-4">
-                <div class="card">
-                    <img src="../static/img/OIG1.jpg" class="card-img-top" alt="Project B">
+                <div class="card clickable">
+                    <a href="" class="card-link">
+                        <img src="../static/img/OIG1.jpg" class="card-img-top" alt="Project B">
+                    </a>
                     <div class="card-body">
                         <h5 class="card-title">Project B</h5>
                         <p class="card-text">This is a summary of Project B.</p>
-                        <a href="#" class="btn btn-primary">More Details</a>
                     </div>
                 </div>
             </div>
             
+            
+            
             <div class="col-md-4">
-                <div class="card">
-                    <img src="../static/img/tetro.png" class="card-img-top" alt="Project A">
+                <div class="card clickable">
+                    <a href="https://teamdev-cteam.github.io/tetris/" class="card-link">
+                        <img src="../static/img/tetris.png" class="card-img-top" alt="Project A">
+                    </a>
                     <div class="card-body">
                         <h5 class="card-title">Project A</h5>
                         <p class="card-text">A brief summary of the post.</p>
-                        <a href="#" class="btn btn-primary">More Details</a>
                     </div>
                 </div>
             </div>
+            
             
         </div>
 

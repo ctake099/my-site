@@ -30,6 +30,8 @@ def process_directory(directory):
             }
             if 'image' in meta:  # 画像がメタデータに含まれている場合
                 item['image'] = meta['image']
+            if 'url' in meta:  # 画像がメタデータに含まれている場合
+                item['url'] = meta['url']
             items.append(item)
     return items
 
