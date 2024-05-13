@@ -2,7 +2,7 @@
 title: "Project B"
 date: "2024-02-01"
 summary: "This is a summary of Project B."
-image: "../static/img/OIG1.jpg"
+image: "static/img/OIG1.jpg"
 url: "https://teamdev-cteam.github.io/tetris/"
 author: "John Doe"
 ---
