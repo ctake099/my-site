@@ -49,7 +49,7 @@ posts = process_directory('content/posts')
 rendered_html = template.render(projects=projects, posts=posts)
 
 # 出力ディレクトリの設定
-output_dir = 'output'
+output_dir = 'docs'
 os.makedirs(output_dir, exist_ok=True)
 
 # HTML ファイルとして出力
