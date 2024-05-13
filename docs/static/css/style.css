@@ -99,3 +99,25 @@ footer {
 }
 
 /* 追加のスタイルが必要な場合はここに記述 */
+.blog-card {
+    width: 100%; /* 各ブログカードが列を埋めるように設定 */
+    margin: 10px; /* カード間にスペースを追加 */
+    transition: box-shadow 0.3s, transform 0.3s; /* 遷移効果をスムーズに */
+}
+
+.blog-card:hover {
+    transform: scale(1.01); /* ホバー時にカードを少し大きく */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* ホバー時の影を強調 */
+}
+
+#blog a {
+    color: black; /* リンクのテキスト色を黒に設定 */
+    text-decoration: none; /* 下線を消す */
+}
+
+#blog a:hover {
+    color: none; /* ホバー時に色をグレーに変更 */
+    text-decoration: none; /* ホバー時に下線を表示 */
+}
+
+

@@ -70,18 +70,20 @@
             <h2>Blog Posts</h2>
             <div class="row">
                 {% for post in posts %}
-                <div class="col-md-4">
-                    <div class="card">
+                <a href="{{ post.url }}">
+                    <div class="card blog-card">
                         <div class="card-body">
                             <h5 class="card-title">{{ post.title }}</h5>
                             <p class="card-text">{{ post.summary }}</p>
-                            <a href="#" class="btn btn-primary">Read More</a>
                         </div>
                     </div>
-                </div>
+                </a>
                 {% endfor %}
             </div>
         </section>
+        
+        
+
 
         <!-- 連絡先セクション -->
         <section id="contact">
