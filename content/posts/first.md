@@ -3,7 +3,6 @@ title: "Python学習の旅"
 date: "2024-05-01"
 summary: "Pythonを学ぶ過程での経験と挑戦についての詳細な見解。"
 slug: "learning-python"
-external_url: ""
 ---
 
 # Python学習の旅

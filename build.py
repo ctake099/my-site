@@ -25,17 +25,20 @@ def process_directory(directory):
             path = os.path.join(directory, filename)
             html, meta = markdown_to_html(path)
             slug = meta.get('slug', generate_slug(meta.get('title', '')))
-            external_url = meta.get('external_url', "")
             item = {
                 'title': meta.get('title', 'No Title'),
                 'date': meta.get('date', 'No Date'),
                 'summary': meta.get('summary', ''),
                 'content': html,
-                'slug': slug,
-                'external_url': external_url
+                'slug': slug
             }
             if 'image' in meta:  # 画像がメタデータに含まれている場合
                 item['image'] = meta['image']
+            if 'project_url' in meta:  
+                item['project_url'] = meta['project_url']
+            if 'github_url' in meta:  
+                item['github_url'] = meta['github_url']
+
             items.append(item)
     return items
 

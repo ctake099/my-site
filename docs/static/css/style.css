@@ -16,15 +16,33 @@ body {
 }
 
 .container {
-    padding: 20px; /* コンテナ全体のパディング */
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 40px; /* コンテナ全体のパディング */
+}
+
+h1, h2, h3 {
+    margin-top: 40px; /* 見出しの上部に余白を追加 */
+    margin-bottom: 20px; /* 見出しの下部に余白を追加 */
 }
 
 h2 {
-    padding-top: 40px; /* 各見出しの上にパディングを追加 */
-    margin-top: 20px; /* 各セクションの間にマージンを設ける */
-    border-bottom: 2px solid #ccc; /* セクションのタイトル下に線を引く */
-    padding-bottom: 10px; /* タイトルの下にスペースを作る */
+    border-left: 5px solid #007bff;
+    padding-left: 10px;
+    color: #007bff;
 }
+
+h3 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    color: #333;
+    font-size: 1.25rem; /* 文字サイズを小さく設定 */
+    margin-bottom: 30px; /* 見出しの下部に余白を追加 */
+}
+
 
 /* ヘッダー */
 header {
@@ -97,6 +115,32 @@ footer {
     margin-top: 40px;
     width: 100%;
 }
+
+.project-screenshot img {
+    max-width: 50%; /* 画像の幅を小さく設定 */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 20px auto; /* 画像を中央に配置 */
+}
+
+.project-content {
+    text-align: left; /* 説明文を左揃えに変更 */
+    margin-top: 20px;
+}
+
+.project-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.project-link {
+    margin: 10px 0; /* 各リンクの間にスペースを追加 */
+}
+
+
+
 
 /* 追加のスタイルが必要な場合はここに記述 */
 .blog-card {

@@ -16,16 +16,23 @@
         </div>
     </header>
     <div class="container">
-        <div class="project-content">
-            {{ project.content | safe }}
-        </div>
-        {% if project.external_url %}
-        <div class="project-link">
-            <a href="{{ project.external_url }}" target="_blank" class="btn btn-primary">プロジェクトを見る</a>
-        </div>
-        {% endif %}
         <div class="project-screenshot">
             <img src="../{{ project.image }}" alt="{{ project.title }}">
+        </div>
+        <div class="project-links">
+            {% if project.project_url %}
+            <div class="project-link">
+                <a href="{{ project.project_url }}" target="_blank" class="btn btn-primary">プロジェクトを見る</a>
+            </div>
+            {% endif %}
+            {% if project.github_url %}
+            <div class="project-link">
+                <a href="{{ project.github_url }}" target="_blank" class="btn btn-secondary">GitHubでソースコードを見る</a>
+            </div>
+            {% endif %}
+        </div>
+        <div class="project-content">
+            {{ project.content | safe }}
         </div>
     </div>
     <footer class="text-center mt-4">
