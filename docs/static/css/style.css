@@ -28,8 +28,8 @@ h2 {
 
 /* ヘッダー */
 header {
-    background-color: #f8f9fa; /* 軽い背景色に変更 */
-    color: black; /* 文字色を黒に変更 */
+    background-color: #004080; /* 軽い背景色に変更 */
+    color: white; /* 文字色を白に変更 */
     padding: 20px 0;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* ソフトなシャドウを追加 */
@@ -51,7 +51,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: black; /* リンクの色を黒に */
+    color: white; /* リンクの色を白に */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
@@ -89,8 +89,8 @@ nav ul li a:hover, nav ul li a:focus {
 
 /* フッター */
 footer {
-    background-color: #f8f9fa; /* 背景色を軽く */
-    color: black;
+    background-color: #004080; /* 背景色を軽く */
+    color: white;
     text-align: center;
     padding: 10px 0;
     box-shadow: 0 -2px 4px rgba(0,0,0,0.1); /* 上向きのシャドウを追加 */
@@ -120,4 +120,98 @@ footer {
     text-decoration: none; /* ホバー時に下線を表示 */
 }
 
+/* コードブロックの背景色とフォントカラー */
+pre.code-block {
+    position: relative;
+    background: #1e1e1e; /* 背景色を黒に設定 */
+    color: #dcdcdc;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
 
+pre.code-block code {
+    background: none; /* 内側の背景を透明に */
+    color: inherit;
+    display: block;
+    white-space: pre; /* preタグ内の改行を維持 */
+}
+
+/* ハイライトされたコードのスタイル */
+.hljs {
+    background: #1e1e1e;
+    color: #dcdcdc;
+}
+
+.hljs-comment, .hljs-quote {
+    color: #6a9955;
+}
+
+.hljs-keyword, .hljs-selector-tag, .hljs-subst {
+    color: #569cd6;
+}
+
+.hljs-number, .hljs-literal, .hljs-variable, .hljs-template-variable, .hljs-tag .hljs-attr {
+    color: #b5cea8;
+}
+
+.hljs-string, .hljs-doctag {
+    color: #ce9178;
+}
+
+.hljs-title, .hljs-section, .hljs-selector-id {
+    color: #dcdcaa;
+}
+
+.hljs-subst {
+    font-weight: normal;
+}
+
+.hljs-type, .hljs-class .hljs-title {
+    color: #4ec9b0;
+}
+
+.hljs-attribute {
+    color: #9cdcfe;
+}
+
+.hljs-regexp, .hljs-link {
+    color: #d16969;
+}
+
+.hljs-symbol, .hljs-bullet {
+    color: #569cd6;
+}
+
+.hljs-built_in, .hljs-builtin-name {
+    color: #ce9178;
+}
+
+.hljs-meta {
+    color: #9cdcfe;
+}
+
+.hljs-deletion {
+    background: #ff0000;
+    color: #fff;
+}
+
+.hljs-addition {
+    background: #00ff00;
+    color: #fff;
+}
+
+.copy-button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    display: block; /* 常に表示 */
+}
