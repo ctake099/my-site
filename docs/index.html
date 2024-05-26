@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Takeru Shingu</title>
-    <!-- Bootstrap CSS の追加 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="static/css/style.css">
 </head>
-
 <body>
-    <!-- ヘッダーとナビゲーション -->
     <header>
         <h1>Takeru Shingu's Portfolio</h1>
         <nav>
@@ -24,18 +20,12 @@
             </ul>
         </nav>
     </header>
-
-    <!-- コンテナ -->
     <div class="container mt-4">
-        <!-- プロファイルセクション -->
         <section id="profile">
             <h2>Profile</h2>
             <p>Brief information about Takeru Shingu.</p>
-            <p></p>
-            <p></p>
         </section>
 
-        <!-- スキルセクション -->
         <section id="skills">
             <h2>Skills</h2>
             <ul>
@@ -45,19 +35,18 @@
             </ul>
         </section>
 
-        <!-- プロジェクトセクション -->
         <section id="projects">
             <h2>Projects</h2>
             <div class="row">
                 
                 <div class="col-md-4">
                     <div class="card clickable">
-                        <a href="https://teamdev-cteam.github.io/tetris/" class="card-link">
-                            <img src="static/img/tetris.png" class="card-img-top" alt="Project A">
+                        <a href="projects/tetris.html" class="card-link">
+                            <img src="static/img/tetris.png" class="card-img-top" alt="Tetris">
                         </a>
                         <div class="card-body">
-                            <h5 class="card-title">Project A</h5>
-                            <p class="card-text">A brief summary of the post.</p>
+                            <h5 class="card-title">Tetris</h5>
+                            <p class="card-text">チーム開発で2週間で作成しました</p>
                         </div>
                     </div>
                 </div>
@@ -65,67 +54,30 @@
             </div>
         </section>
 
-        <!-- ブログポストセクション -->
         <section id="blog">
             <h2>Blog Posts</h2>
             <div class="row">
                 
-                <a href="">
+                <a href="blog/learning-python.html">
                     <div class="card blog-card">
                         <div class="card-body">
-                            <h5 class="card-title">The Title of the Post</h5>
-                            <p class="card-text">A brief summary of the post.</p>
-                        </div>
-                    </div>
-                </a>
-                
-                <a href="">
-                    <div class="card blog-card">
-                        <div class="card-body">
-                            <h5 class="card-title">The Title of the Post</h5>
-                            <p class="card-text">A brief summary of the post.</p>
-                        </div>
-                    </div>
-                </a>
-                
-                <a href="">
-                    <div class="card blog-card">
-                        <div class="card-body">
-                            <h5 class="card-title">The Title of the Post</h5>
-                            <p class="card-text">A brief summary of the post.</p>
-                        </div>
-                    </div>
-                </a>
-                
-                <a href="">
-                    <div class="card blog-card">
-                        <div class="card-body">
-                            <h5 class="card-title">The Title of the Post</h5>
-                            <p class="card-text">A brief summary of the post.</p>
+                            <h5 class="card-title">Python学習の旅</h5>
+                            <p class="card-text">Pythonを学ぶ過程での経験と挑戦についての詳細な見解。</p>
                         </div>
                     </div>
                 </a>
                 
             </div>
         </section>
-        
-        
 
-
-        <!-- 連絡先セクション -->
         <section id="contact">
             <h2>Contact</h2>
             <p>Feel free to reach out if you have any questions or want to connect!</p>
         </section>
-    </div> <!-- コンテナ終了 -->
-
-    <!-- フッター -->
+    </div>
     <footer>
         <p>© 2024 Takeru Shingu. All rights reserved.</p>
     </footer>
-
-    <script src="static/js/main.js"></script>
-    <!-- Bootstrap Bundle JS の追加（Popper.js を含む） -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
