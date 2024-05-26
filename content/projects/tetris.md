@@ -1,7 +1,7 @@
 ---
 title: "Tetris"
 date: "2024-04-23"
-summary: "チーム開発で2週間で作成しました"
+summary: "初めてのチーム開発で作成したTetris"
 image: "static/img/tetris.png"
 slug: "tetris"
 project_url: "https://teamdev-cteam.github.io/tetris/"
@@ -15,14 +15,12 @@ github_url: "https://github.com/teamdev-cteam/tetris"
 - **HTML5**
 - **CSS3**
 - **JavaScript**
-- **Canvas API**
+- **Bootstrap**
 
 ## ゲームの特徴
 
 - シンプルで直感的なインターフェース
 - スムーズなアニメーションと操作性
-- 記録の保存とランキング機能
-- モバイルフレンドリーなデザイン
 
 ## 開発の背景
 

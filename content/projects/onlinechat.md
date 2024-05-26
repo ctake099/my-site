@@ -1,18 +1,16 @@
 ---
-title: "OnlineChatMessanger"
+title: "ChatMessanger"
 date: "2024-05-26"
-summary: "チーム開発で3週間で作成しました"
+summary: "TCP/UDPを使用し、CUI上でできるチャットアプリ"
 image: "static/img/chat.png"
 slug: "chat"
 project_url: ""
 github_url: "https://github.com/teamdevB/SimpleChat"
 ---
 
-grrognegv
-fdgvnkfdvorb
-dvefdksjvof
-## onlile Chat messaggeregf
+
+## onlile Chat messagger
 
 ### 楽しかった
 
-むずすぎ
+後で書く
