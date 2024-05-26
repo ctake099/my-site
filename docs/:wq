@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Takeru Shingu</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
     <header>
@@ -129,15 +129,13 @@
         </section>
 
         <section id="contact">
-            <h2>お問い合わせ</h2>
-            <p>ご質問がある場合や連絡を取りたい場合は、以下の方法でご連絡ください。</p>
-            <p>メール: ctake0099[at]gmail.com</p>
+            <h2>Contact</h2>
+            <p>Feel free to reach out if you have any questions or want to connect!</p>
         </section>
-        </div>
-        <footer>
-            <p>© 2024 Takeru Shingu. All rights reserved.</p>
-        </footer>
-        
+    </div>
+    <footer>
+        <p>© 2024 Takeru Shingu. All rights reserved.</p>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
