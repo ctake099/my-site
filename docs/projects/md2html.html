@@ -31,9 +31,43 @@
             
         </div>
         <div class="project-content">
-            <h2>Markdown to HTML Converter</h2>
-<h3>楽しかった</h3>
-<p>あとで書く</p>
+            <h2>プロジェクト概要</h2>
+<p>MarkdownをHTMLに変換するウェブアプリケーションを開発しました。このプロジェクトでは、以下の技術を使用しました:</p>
+<ul>
+<li><strong>PHP</strong></li>
+<li><strong>Bootstrap</strong></li>
+<li><strong>Monacoエディタ</strong></li>
+<li><strong>Parsedown（PHPライブラリ）</strong></li>
+</ul>
+<h2>アプリの特徴</h2>
+<ul>
+<li>MarkdownをリアルタイムでHTMLに変換</li>
+<li>変換されたHTMLをダウンロード可能</li>
+<li>美しいデザインとユーザーフレンドリーなインターフェース</li>
+</ul>
+<h2>開発の背景</h2>
+<p>以前のバックエンドプロジェクトでは、MarkdownファイルをHTMLファイルに変換するプログラムを作成しました。</p>
+<h2>特に頑張った点</h2>
+<h3>Monacoエディタの統合</h3>
+<p>ウェブページにMonacoコードエディタを実装し、ユーザーがMarkdownテキストを直感的に入力できるようにしました。以下のスクリプトを使用して、エディタを初期化しました。</p>
+<pre><code class="language-html">&lt;div id=&quot;editor-container&quot; style=&quot;width:800px;height:600px;border:1px solid grey&quot;&gt;&lt;/div&gt;
+&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.20.0/min/vs/loader.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    require.config({ paths: { 'vs': 'https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.20.0/min/vs' }});
+    require(['vs/editor/editor.main'], function() {
+        var editor = monaco.editor.create(document.getElementById('editor-container'), {
+            value: '',
+            language: 'markdown'
+        });
+    });
+&lt;/script&gt;
+</code></pre>
+<h3>PHPとParsedownによる変換ロジック</h3>
+<p>PHPのParsedownライブラリを使用して、MarkdownからHTMLへの変換機能を実装しました。これにより、Markdownテキストを簡単にHTMLに変換できるようにしました。</p>
+<h3>ダウンロードと表示ロジックの実装</h3>
+<p>ユーザーが変換されたHTMLをダウンロードできる機能を実装しました。また、変換されたHTMLをウェブページ上に直接表示するオプションも提供しました。</p>
+<h3>デザインとレスポンシブ対応</h3>
+<p>Bootstrapを使用して、美しく使いやすいインターフェースを実現しました。また、レスポンシブデザインを取り入れることで、さまざまなデバイスでの快適な閲覧を可能にしました。</p>
         </div>
     </div>
     <footer class="text-center mt-4">
